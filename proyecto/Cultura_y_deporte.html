@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura y Deportes</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/bootstrapp.css">
+    <style>
+        body {
+            font-family: 'Poetsen One', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #000080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            background-color: #3B3B98;
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            text-align: center;
+            color: #2E2E2E;
+        }
+        .content p {
+            text-align: center;
+            color: #2E2E2E;
+        }
+        .courses {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .course-table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        .course-table th, .course-table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        .course-table th {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            background-color: #2E2E2E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .quick-navigation, .footer .stay-connected, .footer .get-in-touch {
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+  background-color: #152836;
+  color: #eee;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.small {
+  font-size: 11px;
+  color: #999;
+  display: block;
+  margin-top: -10px
+}
+
+.cont {
+  text-align: center;
+}
+
+.page-head {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-head .lead {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.btn {
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-lg {
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 1.33333;
+  padding: 10px 16px;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #152836;
+}
+
+.btn-primary {
+  background-color: #152836;
+  border-color: #0e1a24;
+  color: #ffffff;
+}
+
+.btn-primary {
+  border-color: #eeeeee;
+  color: #eeeeee;
+  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+}
+
+.page-head h1 {
+  font-size: 42px;
+  margin: 0 0 20px;
+  color: #FFF;
+  position: relative;
+  display: inline-block;
+}
+
+.page-head h1 .version {
+  bottom: 0;
+  color: #ddd;
+  font-size: 11px;
+  font-style: italic;
+  position: absolute;
+  width: 58px;
+  right: -58px;
+}
+
+.demo-gallery > ul {
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+.demo-gallery > ul > li {
+  margin-bottom: 15px;
+  width: 180px;
+  display: inline-block;
+  margin-right: 15px;
+  list-style: outside none none;
+}
+
+.demo-gallery > ul > li a {
+  border: 3px solid #FFF;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .justified-gallery > a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.demo-gallery .justified-gallery > a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+
+.demo-gallery.dark > ul > li a {
+  border: 3px solid #04070a;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  max-width: 80px;
+  position: fixed;
+  top: 0;
+  right: 25px;
+}
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #fff;
+  color: #fff;
+  margin: 5px;
+}
+footer a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>UPSLP</h1>
+    </div>
+    <div class="nav">
+      <a href="#">INICIO</a>
+      <a href="#">Oferta Educativa</a>
+      <a href="#">Cultura y Deportes</a>
+      <a href="#">Vinculacion</a>
+      <a href="#">Comunidad</a>
+      <a href="#">Interaccion y Ayuda</a>
+    </div>
+
+    <div class="cont">
+        <div class="page-head">
+          <h1>Cursos</h1>
+          <h2>JUSTIFICACIÓN</h2>
+          <p style="text-align: justify;">La Universidad Politécnica de San Luis Potosí está comprometida en el desarrollo personal y profesional exitoso del estudiante, impulso para la formación integral y humana, actividades deportivas y culturales que complementen la formación académica del estudiante.</p>
+          <h2>OBJETIVO</h2>
+          <p style="text-align: justify;">Ser parte activa en el cumplimiento del compromiso de nuestra universidad con excelencia en la formación integral y humana, desarrollando y aplicando nuevos conocimientos; mediante un programa de actividades deportivas incluyente y diversificado que permita a los estudiantes equilibrar su desarrollo académico, que provea de experiencias y valores que coadyuven a su madurez y calidad profesional, mismas que consistirán en un sello distintivo de su paso por la universidad politécnica.</p>
+          <br><p>Las disciplinas que actualmente se ofrecen son:</p>
+      
+        <div class="courses">
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th>Fútbol Soccer &#9917;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.38d505da022c387aa620b4a8cd61f5d8?rik=2znGpI2YOQDJug&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fSoccer-HD-Wallpapers-04301.jpg&ehk=XfTuh%2fGTm9GYk0VurZ93bjbi2dAWWIT%2bnq0SW25fCHU%3d&risl=&pid=ImgRaw&r=0.jpg">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.38d505da022c387aa620b4a8cd61f5d8?rik=2znGpI2YOQDJug&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fSoccer-HD-Wallpapers-04301.jpg&ehk=XfTuh%2fGTm9GYk0VurZ93bjbi2dAWWIT%2bnq0SW25fCHU%3d&risl=&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </th>
+                        <th>&nbsp;</th>
+                        <th>Yoga &#129496;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.2c54ad7211aac1ff4371048b7b95fc7e?rik=qEleAfu4PBhQpw&riu=http%3a%2f%2fwww.goalcast.com%2fwp-content%2fuploads%2f2016%2f11%2fyoga-hd-wallpaper_024616754_279.jpg&ehk=lNDqjs6%2fPiKgoYmWXp0eODYSoO0vLgEL%2f6GnpoDshO0%3d&risl=&pid=ImgRaw&r=0">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.2c54ad7211aac1ff4371048b7b95fc7e?rik=qEleAfu4PBhQpw&riu=http%3a%2f%2fwww.goalcast.com%2fwp-content%2fuploads%2f2016%2f11%2fyoga-hd-wallpaper_024616754_279.jpg&ehk=lNDqjs6%2fPiKgoYmWXp0eODYSoO0vLgEL%2f6GnpoDshO0%3d&risl=&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fútbol Rápido &#9917;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.f06304a0e6b6ddb2910b1a243445ec9d?rik=uSZfYEwV7CwNNg&riu=http%3a%2f%2fsialdeporte.com%2fwp-content%2fuploads%2f2018%2f01%2fReglas-del-F%c3%batbol-R%c3%a1pido-6-1024x681.jpg&ehk=T14JIwpJizDnebkyP3LJRIPyYoh4aYWBnq4RxdEMk%2bk%3d&risl=&pid=ImgRaw&r=0">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.f06304a0e6b6ddb2910b1a243445ec9d?rik=uSZfYEwV7CwNNg&riu=http%3a%2f%2fsialdeporte.com%2fwp-content%2fuploads%2f2018%2f01%2fReglas-del-F%c3%batbol-R%c3%a1pido-6-1024x681.jpg&ehk=T14JIwpJizDnebkyP3LJRIPyYoh4aYWBnq4RxdEMk%2bk%3d&risl=&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>Dibujo &#9997;
+                            <br>
+                            <a href="">
+                                <img class="https://cdn.pickr.com.au/wp-content/uploads/2016/11/wacom-the-next-level-2016-01-750x486.jpg">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://cdn.pickr.com.au/wp-content/uploads/2016/11/wacom-the-next-level-2016-01-750x486.jpg/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Básquetbol &#127936;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/OIP.xp2t5kAl6xGZAmBMIjDK0wHaFF?rs=1&pid=ImgDetMain">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/OIP.xp2t5kAl6xGZAmBMIjDK0wHaFF?rs=1&pid=ImgDetMain/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                          
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>Guitarra &#127928;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/OIP.sbBDkjM0NGzAXubkaGy-FAHaGA?rs=1&pid=ImgDetMain">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/OIP.sbBDkjM0NGzAXubkaGy-FAHaGA?rs=1&pid=ImgDetMain/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Voleibol &#127952;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.6117c46e78541c3e4e272aa6fe4dc18d?rik=m4BHDFHEokjK1A&pid=ImgRaw&r=0">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.6117c46e78541c3e4e272aa6fe4dc18d?rik=m4BHDFHEokjK1A&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>Baile-fitnes &#128131;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.c4a1088ed50e5b66594b5c2dcb0d3fc4?rik=d1RCTMSzsw4e6A&pid=ImgRaw&r=0">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.c4a1088ed50e5b66594b5c2dcb0d3fc4?rik=d1RCTMSzsw4e6A&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tae kwon Do &#129355;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.19d3eac3a49cdc0e5ea0fe785a8fa65c?rik=VjkVGtRJh4YehA&riu=http%3a%2f%2fmedia.zenfs.com%2fen_us%2fNews%2fReuters%2f2015-06-12T134745Z_77118465_MT1ACI13805135_RTRMADP_3_TAEKWONDO.JPG&ehk=C2gt1yQwd1mK%2fhsO9XML7q6S1EkoJsFCvYoK9w90oCg%3d&risl=&pid=ImgRaw&r=0">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.19d3eac3a49cdc0e5ea0fe785a8fa65c?rik=VjkVGtRJh4YehA&riu=http%3a%2f%2fmedia.zenfs.com%2fen_us%2fNews%2fReuters%2f2015-06-12T134745Z_77118465_MT1ACI13805135_RTRMADP_3_TAEKWONDO.JPG&ehk=C2gt1yQwd1mK%2fhsO9XML7q6S1EkoJsFCvYoK9w90oCg%3d&risl=&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>Atletismo &#127939;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/OIP.S7YGBdVa50VHG3qyETnDywHaE8?rs=1&pid=ImgDetMain">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/OIP.S7YGBdVa50VHG3qyETnDywHaE8?rs=1&pid=ImgDetMain/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Karate &#129355;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/OIP.5D1I5vUNUkDPbqv4jUVJhwHaEQ?rs=1&pid=ImgDetMain">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/OIP.5D1I5vUNUkDPbqv4jUVJhwHaEQ?rs=1&pid=ImgDetMain/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>Ajedrez &#9818;
+                            <br>
+                            <a href="">
+                                <img class="https://th.bing.com/th/id/R.1ca1546b11e18ad342e7a5564f7992ee?rik=zxe45rczpWcKDQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-yUod2kw-FSk%2fUB_nglZRh_I%2fAAAAAAAAAAU%2f3haLq09JOHY%2fs1600%2fBankoboev_Ru_shahmaty_vid_s_ugla.jpg&ehk=1IuRiOCZk7pxUmGg5T1aBOusX0nysfAtWOh7rePlaGg%3d&risl=&pid=ImgRaw&r=0">
+                                <div class="demo-gallery-poster">
+                                  <img src="https://th.bing.com/th/id/R.1ca1546b11e18ad342e7a5564f7992ee?rik=zxe45rczpWcKDQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-yUod2kw-FSk%2fUB_nglZRh_I%2fAAAAAAAAAAU%2f3haLq09JOHY%2fs1600%2fBankoboev_Ru_shahmaty_vid_s_ugla.jpg&ehk=1IuRiOCZk7pxUmGg5T1aBOusX0nysfAtWOh7rePlaGg%3d&risl=&pid=ImgRaw&r=0/img/zoom.jpg"  height="100" width="150">
+                                </div>
+                              </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="small">Click on any of the images to see</span>
+            
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/kattreyes" target="_blank"><i class="icon-social-github icons"></i></a>
+        <a href="index.html" role="button"><i class="&#9664;"></i></a><!--icono de flecha-->
+
+    </footer>
+    <div class="footer">
+        <div class="quick-navigation">
+          <h2>Navegacion Rapida</h2>
+
+        </div>
+        <div class="stay-connected">
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Youtube</a>
+        </div>
+        <div class="get-in-touch">
+            <h2>Contacto</h2>
+            <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363<br> 
+                Conmutador: (444) 870 - 21 - 00<br>
+                Atención Politécnica: politecnica@upslp.edu.mx</p>
+        </div>
+</body>
+</html>
